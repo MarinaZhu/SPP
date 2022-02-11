@@ -1,0 +1,7 @@
+{% extends "registration/base.html" %}
+{% block title %}Профіль{% endblock %}
+
+{% block content %}
+    <h1>Привіт, {{ user.username }}</h1>
+    <h3>Email: {{ user.email }}</h3>
+{% endblock %}

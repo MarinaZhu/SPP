@@ -1,0 +1,15 @@
+{% extends "registration/base.html" %}
+{% block title %}Log-in{% endblock %}
+
+{% block content %}
+
+    <form class="login" method="post" action="{% url 'login' %}">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input class="login-button" type="submit" value="login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+        <p class="message">Не зареєстровані? <a href="{% url 'registration' %}">Створити акаунт</a></p>
+    </form>
+
+
+{% endblock %}

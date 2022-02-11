@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-left: 15px;
+}
+
+
+nav {
+    margin: 0 auto;
+    ppadding: 20px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+    color: #ffffff;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul li a:hover{
+    color: #ff06ac;
+}
+
+.glyphicon:hover::after  {
+ content: attr(data-title);
+}
+
+.item-list{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: baseline;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
+    text-align: center;
+    background: rgba(213, 213, 213, 0.25);
+    color: #5e5b5b;
+}
+
+.workout-item{
+    min-width: 29%;
+    max-width: 29%;
+}
+
+.program-item{
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h2 a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Russo One';
+    text-shadow: 1px 0 1px rgba(250, 85, 194, 0.49);
+}
+
+.workout-name{
+    text-align: center;
+    margin: 40px;
+    text-shadow: 1px 0 1px rgba(250, 85, 194, 0.49);
+    font-family: 'Russo One';
+}
+
+.workout-detail-main{
+    background: rgba(213, 213, 213, 0.25);
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+.workout-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: black;
+}
+
+.workout-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+.workout-instruction{
+    padding: 20px;
+}
+
+.workout-instruction h2{
+    font-family: 'Russo One';
+    text-shadow: 1px 0 1px rgba(250, 85, 194, 0.49);
+    text-indent: 30px;
+}
+
+.messages{
+    margin-top: 20px;
+    color: red;
+}
+
+
+
+
